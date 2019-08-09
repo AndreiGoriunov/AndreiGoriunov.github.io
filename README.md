@@ -1,2 +1,2 @@
 # AndreiGoriunov.github.io
-Personal Portfolia Website
+Personal Portfolio Website
