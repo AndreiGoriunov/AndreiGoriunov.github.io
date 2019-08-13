@@ -8,23 +8,32 @@
 </head>
 
 <body>
-    <form>
-        First Name:
-        <input type="text"><br> Last Name:
-        <input type="text"><br> Email:
-        <input type="email" required><br> Birthday:
-        <input type="date"><br> Gender:
-        <br>
-        <input type="radio" name="gender">Male<br>
-        <input type="radio" name="gender">Female<br>
-        <input type="radio" name="gender">Other<br> Pets:
-        <br>
-        <input type="checkbox">Cat<br>
-        <input type="checkbox">Dog<br>
-
-        <input type="submit" value="Register">
-        <input type="reset" value="Reset">
-    </form>
+    <!-- Test -->
+    <div style="background:rgb(146, 132, 236);margin:0;">
+        <form method="GET">
+            First Name: <input type="text" name="firstname">
+            <br> Last Name: <input type="text" name="lastname">
+            <br> Email: <input type="email" name="email" required>
+            <br> Password:<input type="password" name="password" min="6">
+            <br> Birthday: <input type="date" name="birthday"><br>
+            <br> Gender: <br>
+            <input type="radio" name="gender" value="Male">Male<br>
+            <input type="radio" name="gender" value="Female">Female<br>
+            <input type="radio" name="gender" value="Other">Other<br>
+            <br>Pets:
+            <br>
+            <input type="checkbox" name="cat">Cat<br>
+            <input type="checkbox" name="dog">Dog<br>
+            <br>Cars:<br>
+            <select>
+            <option value="Volvo">Volvo</option>
+            <option value="Audi">Audi</option>
+            <option value="Lexus">Lexus</option>
+            </select><br><br>
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
 </body>
 
 </html>
