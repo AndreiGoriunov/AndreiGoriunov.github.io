@@ -1,17 +1,17 @@
-body.main {
-    background: linear-gradient(to bottom, #a8dfff 20%, #9b887e 50%, #080038 100%) no-repeat;
-    width: 100vw;
-    height: 100vh;
+body {
+    /* background: linear-gradient(to bottom, #a8dfff 20%, #9b887e 50%, #080038 100%) no-repeat; */
+    background: url('/img/orange-blue-sky.jpg');
+    background-size: cover;
     margin: 0;
 }
 
-div.page {
+.page {
     background: rgba(128, 128, 128, 0.349);
     margin: 1%;
-    margin-right: 2%;
     border-radius: 15px;
     height: 100%;
     width: auto;
+    padding: 1vw;
 }
 
 
@@ -22,14 +22,13 @@ ul.navBar {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: linear-gradient(to right, #2c2c2c, #4d4d4d);
+    background: linear-gradient(to top, #2c2c2c, #4d4d4d);
     box-shadow: 0px 1px 6px 2px black;
     position: -webkit-sticky;
     /* Safari */
     position: sticky;
     top: 0;
     width: 100%;
-    top: 0;
 }
 
 li.navButton {
@@ -37,13 +36,14 @@ li.navButton {
 }
 
 li.navButton a {
-    display: block;
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 23px;
     text-decoration: none;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
+    transition: background 0.3s ease-in-out;
 }
 
 
@@ -62,11 +62,12 @@ li.navButton a.main {
 /*----------------------*/
 
 li.navButton a:hover {
-    background-color: #72b972;
+    background: #72b972;
 }
 
 li.navButton a.active {
-    background-color: #72b972;
+    background: #72b972;
+    transition: none;
 }
 
 

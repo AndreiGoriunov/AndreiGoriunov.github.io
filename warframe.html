@@ -2,6 +2,10 @@
 <html>
 
 <head>
+    <!-- Icon Setup -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- ---------- -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css" type="text/css">
@@ -9,25 +13,34 @@
 </head>
 <!-- -->
 
-<body class="main">
-    <ul class="navBar">
-        <li class="navButton">
-            <a class="main" href="index.html">
-                <img src="./img/KodX_Icon.svg" style="width:45px;height:45px;">
-            </a>
-        </li>
-        <li class="navButton"><a href="portfolio.html">Portfolio</a></li>
-        <li class="navButton"><a class="active" href="warframe.html">Warframe</a></li>
-        <li class="navButton"><a href="project.html">Project</a></li>
-        <li class="navButton"><a href="#wip2">WIP</a></li>
-    </ul>
-    <div class="page">
-        <img style="align-self:center;width:40%;height:auto;" src="./img/Warframe_logo.png">
+<body>
+    <nav>
+        <ul class="navBar">
+            <li class="navButton">
+                <a class="main" href="index.html">
+                    <img src="./img/KodX_Icon.svg" style="width:45px;height:45px;">
+                </a>
+            </li>
+            <li class="navButton"><a href="portfolio.html">Portfolio</a></li>
+            <li class="navButton"><a class="active" href="warframe.html">Warframe</a></li>
+            <li class="navButton"><a href="project.html">Project</a></li>
+        </ul>
+    </nav>
+
+    <!-- <script>
+        const url = 'http://content.warframe.com/dynamic/worldState.php';
+    </script> -->
+
+    <section class="page">
+        <img style="align-self:center;width:20%;height:auto;" src="./img/Warframe_logo.png">
         <ul style="list-style-type: none;">
             <li><a href="https://www.warframe.com" style="text-decoration: none; color:white; font-size: 20px">Warframe</a></li>
             <li><a href="https://warframe.market" style="text-decoration: none; color:white; font-size: 20px">Market</a></li>
         </ul>
-    </div>
+
+        <!-- <iframe src="https://deathsnacks.com/wf/" style="width:50vw;height:40vh;"></iframe> -->
+
+    </section>
 </body>
 
 </html>

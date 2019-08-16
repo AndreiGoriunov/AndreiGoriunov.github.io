@@ -1,0 +1,47 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: rebeccapurple;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0px 3px 5px 6px rgb(168, 168, 0);
+    animation: rainbow 6s infinite;
+    position: sticky;
+    top: 0;
+}
+
+@keyframes rainbow {
+    0%,
+    100% {
+        box-shadow: 0px 3px 5px 6px rgb(187, 0, 0);
+    }
+    25% {
+        box-shadow: 0px 3px 5px 6px rgb(187, 84, 0);
+    }
+    50% {
+        box-shadow: 0px 3px 5px 6px rgb(187, 184, 0);
+    }
+    75% {
+        box-shadow: 0px 3px 5px 6px rgb(75, 187, 0);
+    }
+}
+
+li {
+    float: left;
+}
+
+li a {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+li a:hover {
+    background: #686868;
+    ;
+}
