@@ -94,3 +94,54 @@
     font-family: 'Quicksand', sans-serif;
     font-size: 1.1em;
 }
+
+
+/* Typewriter */
+
+.typewriter {
+    width: 400px;
+    overflow: hidden;
+    border-right: 5px solid #5c9900;
+    white-space: nowrap;
+    margin: 0 auto;
+    /* letter-spacing: .15em; */
+    animation: type 2.5s steps(25, end), caret .75s step-end infinite;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border-right: 5px solid #5c9900;
+    }
+    100% {
+        border: none;
+    }
+}
+
+@-webkit-keyframes type {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border-right: 5px solid #5c9900;
+    }
+    100% {
+        border: none;
+    }
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@-webkit-keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
