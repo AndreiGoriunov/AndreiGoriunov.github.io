@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+    @import url('https://fonts.googleapis.com/css?family=Quicksand:400');
     .project {
         background-color: rgba(44, 44, 44, 0.5);
         margin: 0.1%;
@@ -47,7 +47,7 @@
     .infoSection p {
         color: white;
         font-family: 'Quicksand', sans-serif;
-        font-size: 1.25em;
+        font-size: 1.2em;
     }
     
     a {
