@@ -1,4 +1,6 @@
-/*RAINBOW SHAPE================================================================*/
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400');
+
+/*RAINBOW SHAPE ANIMATION================================================================*/
 
 .shapeContainer {
     display: flex;
@@ -85,8 +87,8 @@
     font-size: 3em;
     font-family: 'Quicksand', sans-serif;
     letter-spacing: 2px;
-    word-spacing: 2px;
-    margin-bottom: 4vh;
+    word-spacing: 4px;
+    margin-bottom: 2vh;
 }
 
 .para {
@@ -96,7 +98,7 @@
 }
 
 
-/* Typewriter */
+/* Typewriter animation */
 
 .typewriter {
     width: 400px;
@@ -106,7 +108,7 @@
     margin: 0 auto;
     /* letter-spacing: .15em; */
     animation: type 2.5s steps(25, end), caret .75s step-end infinite;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forward;
     -webkit-animation-fill-mode: forwards;
 }
 

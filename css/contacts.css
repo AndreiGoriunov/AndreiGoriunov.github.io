@@ -1,0 +1,36 @@
+/* Font Import */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400');
+
+/* --------------------------------------------------------------- */
+
+.social {
+    width: 100px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.social i {
+    color: white;
+    font-size: 35px;
+}
+
+.social i:hover {
+    color: #75bd75;
+}
+
+.para {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+}
+
+.para a {
+    color: white;
+}
+
+.para a:hover {
+    color: #75bd75;
+}
