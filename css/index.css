@@ -71,11 +71,10 @@
 }
 
 
-/* TEXT STYLES */
+/* Containers and Classes */
 
 .infoContainer {
-    display: flex;
-    flex-direction: column;
+    justify-items: center;
     margin: 20vh;
     margin-right: 25vw;
     margin-left: 25vw;
@@ -96,6 +95,9 @@
     font-family: 'Quicksand', sans-serif;
     font-size: 1.2em;
 }
+
+
+/* IMG */
 
 
 /* Typewriter animation */
