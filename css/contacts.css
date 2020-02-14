@@ -20,17 +20,3 @@
 .social i:hover {
     color: #75bd75;
 }
-
-.para {
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.2em;
-}
-
-.para a {
-    color: white;
-}
-
-.para a:hover {
-    color: #75bd75;
-}
