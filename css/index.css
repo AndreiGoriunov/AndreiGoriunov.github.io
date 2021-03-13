@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400');
 
-/*RAINBOW SHAPE ANIMATION================================================================*/
+/* Rainbow Animation */
 
 body {
     font-size: 1vw;
@@ -38,20 +38,12 @@ body {
 
 .infoContainer {
     justify-items: center;
-    margin: 20vh;
-    margin-right: 25vw;
-    margin-left: 25vw;
-    padding: 0;
-}
-
-.nameContainer {
-    width: 100%;
-    background: red;
+    padding: 20vh 20vw;
 }
 
 .name {
     text-align: center;
-    font-size: 3em;
+    font-size: 4em;
     font-family: 'Quicksand', sans-serif;
     letter-spacing: 2px;
     word-spacing: 4px;
@@ -60,6 +52,7 @@ body {
 
 .para {
     font-size: 1.2em;
+    padding: 0 10vw;
 }
 
 .breath {
@@ -75,6 +68,6 @@ body {
 
 @keyframes breath {
     50% {
-        text-shadow: 0 0 5px #ffdfba;
+        text-shadow: 0 0 4px #ffdfba;
     }
 }

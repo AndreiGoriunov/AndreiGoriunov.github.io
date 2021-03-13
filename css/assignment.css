@@ -1,5 +1,3 @@
-    @import url('https://fonts.googleapis.com/css?family=Quicksand:400');
-    /* --------------------------------------------------------------- */
     /* P A G E */
     
     .bgColor {
@@ -16,7 +14,7 @@
     /* G E N E R A L   T E X T */
     
     h2 {
-        color: white;
+        color: #fff;
         font-family: monospace;
     }
     
@@ -67,15 +65,16 @@
     
     img.picture1 {
         margin: 10px;
-        height: 200px;
         border-radius: 15px;
+        max-width: 200px;
         transform: rotate3d(1, 1, 1, -10deg);
         box-shadow: 5px 8px #8d8d8d;
     }
     
     img.picture2 {
         margin: 10px;
-        height: 200px;
+        border-radius: 15px;
+        max-width: 200px;
         border: 15px solid transparent;
         border-image: url(../img/for_assignment/pancake_texture.jpg) 25 round;
     }

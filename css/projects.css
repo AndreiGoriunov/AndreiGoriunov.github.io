@@ -27,10 +27,10 @@ h1.projectName {
 
 .mediaSection {
     width: 100%;
-    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background: red;
 }
 
 
@@ -46,12 +46,11 @@ img.BUPlogo {
 .mediaSection img {
     border-radius: 3px;
     margin-right: 15px;
-    height: 280px;
-    margin-top: 3px;
+    max-width: 250px;
 }
 
 .mediaSection video {
-    height: 280px;
     border-radius: 3px;
     margin-right: 15px;
+    max-width: 250px;
 }
