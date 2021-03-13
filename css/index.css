@@ -2,6 +2,12 @@
 
 /*RAINBOW SHAPE ANIMATION================================================================*/
 
+body {
+    font-size: 1vw;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+
 .shapeContainer {
     display: flex;
     flex-direction: row;
@@ -38,68 +44,37 @@
     padding: 0;
 }
 
+.nameContainer {
+    width: 100%;
+    background: red;
+}
+
 .name {
-    color: #fff;
+    text-align: center;
     font-size: 3em;
     font-family: 'Quicksand', sans-serif;
     letter-spacing: 2px;
     word-spacing: 4px;
-    margin-bottom: 2vh;
+    margin: 0 auto;
 }
 
 .para {
-    color: #fff;
-    font-family: 'Quicksand', sans-serif;
     font-size: 1.2em;
 }
 
-
-/* Typewriter animation */
-
-.typewriter {
-    width: 400px;
-    overflow: hidden;
-    border-right: 5px solid #5c9900;
-    white-space: nowrap;
-    margin: 0 auto;
-    /* letter-spacing: .15em; */
-    animation: type 2.5s steps(25, end), caret .75s step-end infinite;
-    animation-fill-mode: forward;
-    -webkit-animation-fill-mode: forwards;
+.breath {
+    background: linear-gradient(90deg, #ffb3ba, #ffdfba, #ffffba, #baffc9, #bae1ff, #e3baff, #ffbaea, #ffb3ba);
+    background-size: 1600% 1600%;
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: breath 3s linear infinite, pastelRainbow 8s ease infinite;
 }
 
-@keyframes type {
-    0% {
-        width: 0;
-    }
-    99.9% {
-        border-right: 5px solid #5c9900;
-    }
-    100% {
-        border: none;
-    }
-}
-
-@-webkit-keyframes type {
-    0% {
-        width: 0;
-    }
-    99.9% {
-        border-right: 5px solid #5c9900;
-    }
-    100% {
-        border: none;
-    }
-}
-
-@keyframes caret {
+@keyframes breath {
     50% {
-        border-color: transparent;
-    }
-}
-
-@-webkit-keyframes caret {
-    50% {
-        border-color: transparent;
+        text-shadow: 0 0 5px #ffdfba;
     }
 }

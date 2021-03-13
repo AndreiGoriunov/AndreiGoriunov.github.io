@@ -105,7 +105,7 @@ img.logo {
 /*=========================================================================*/
 
 
-/* G E N E R A L   T E X T */
+/* T E X T */
 
 p {
     color: white;
@@ -117,6 +117,15 @@ h1 {
     font-family: 'Quicksand', sans-serif;
     font-size: 2em;
     color: white;
+}
+
+
+/* G E N E R A L */
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 
