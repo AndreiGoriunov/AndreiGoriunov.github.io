@@ -20,7 +20,7 @@ body {
     height: 1.5vw;
     width: 20vw;
     background: linear-gradient(90deg, #ffb3ba, #ffdfba, #ffffba, #baffc9, #bae1ff, #e3baff, #ffbaea, #ffb3ba);
-    background-size: 1600% 1600%;
+    background-size: 1800% 100%;
     animation: pastelRainbow 8s ease infinite;
 }
 
@@ -57,10 +57,9 @@ body {
 
 .breath {
     background: linear-gradient(90deg, #ffb3ba, #ffdfba, #ffffba, #baffc9, #bae1ff, #e3baff, #ffbaea, #ffb3ba);
-    background-size: 1600% 1600%;
-    color: #000;
+    background-size: 1600% 100%;
+    color: #ffb3ba;
     background-clip: text;
-    text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: breath 3s linear infinite, pastelRainbow 8s ease infinite;

@@ -48,6 +48,7 @@ ul.navBar {
 
 li.navButton {
     float: left;
+    padding: 0 5px;
     height: 100%;
     vertical-align: middle;
     transition: background .25s ease-in-out;
