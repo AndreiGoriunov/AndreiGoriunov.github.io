@@ -30,7 +30,6 @@ h1.projectName {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background: red;
 }
 
 

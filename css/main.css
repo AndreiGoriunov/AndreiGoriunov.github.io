@@ -17,7 +17,7 @@ body {
 main {
     background: rgba(128, 128, 128, 0.349);
     margin: 20px;
-    margin-top: 90px;
+    margin-top: 80px;
     border-radius: 15px;
     height: 100%;
     width: auto;
@@ -31,6 +31,7 @@ main {
 /* N A V I G A T I O N   B A R */
 
 ul.navBar {
+    height: 60px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -47,39 +48,32 @@ ul.navBar {
 
 li.navButton {
     float: left;
+    height: 100%;
+    vertical-align: middle;
+    transition: background .25s ease-in-out;
 }
 
 li.navButton a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 23px;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    transition: background 0.3s ease-in-out;
-}
-
-
-/*Main Icon-------------*/
-
-li.navButton a.main {
-    display: block;
-    color: white;
+    padding: 0 8px;
     align-items: center;
-    padding: 6px;
-    padding-top: 11px;
+    display: flex;
+    color: #fff;
     text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
 }
 
 
 /*----------------------*/
 
-li.navButton a:hover {
+li.navButton:hover {
     background: #72b972;
 }
 
-li.navButton a.active {
+li.navButton.active {
     background: #72b972;
     transition: none;
 }
