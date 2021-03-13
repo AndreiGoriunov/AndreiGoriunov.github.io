@@ -46,6 +46,7 @@ img.BUPlogo {
 .image {
     border-radius: 3px;
     margin-right: 15px;
+    height: intrinsic;
 }
 
 @media (orientation: landscape) {
