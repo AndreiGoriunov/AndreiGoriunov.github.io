@@ -51,12 +51,10 @@ img.BUPlogo {
 @media (orientation: landscape) {
     .video {
         max-width: 250px;
-        height: auto;
         width: 10%;
     }
     .image {
         max-width: 250px;
-        height: auto;
         width: 10%;
     }
     .landscape {
@@ -68,12 +66,10 @@ img.BUPlogo {
 @media (orientation: portrait) {
     .video {
         max-width: 250px;
-        height: auto;
         width: 20%;
     }
     .image {
         max-width: 250px;
-        height: auto;
         width: 20%;
     }
     .landscape {
