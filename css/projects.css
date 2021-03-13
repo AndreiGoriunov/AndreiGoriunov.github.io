@@ -42,16 +42,42 @@ img.BUPlogo {
     margin-left: 10px;
 }
 
-.mediaSection img {
+.video,
+.image {
     border-radius: 3px;
     margin-right: 15px;
-    max-width: 250px;
-    height: auto;
 }
 
-.mediaSection video {
-    border-radius: 3px;
-    margin-right: 15px;
-    max-width: 250px;
-    height: auto;
+@media (orientation: landscape) {
+    .video {
+        max-width: 250px;
+        height: auto;
+        width: 10%;
+    }
+    .image {
+        max-width: 250px;
+        height: auto;
+        width: 10%;
+    }
+    .landscape {
+        width: 20%;
+        max-width: 500px;
+    }
+}
+
+@media (orientation: portrait) {
+    .video {
+        max-width: 250px;
+        height: auto;
+        width: 20%;
+    }
+    .image {
+        max-width: 250px;
+        height: auto;
+        width: 20%;
+    }
+    .landscape {
+        width: 50%;
+        max-width: 500px;
+    }
 }
