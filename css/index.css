@@ -16,7 +16,6 @@ body {
     display: flex;
     border-radius: 50px;
     flex: 1;
-    height: 1.5vw;
     width: 20vw;
     background: linear-gradient(90deg, #ffb3ba, #ffdfba, #ffffba, #baffc9, #bae1ff, #e3baff, #ffbaea, #ffb3ba);
     background-size: 1800% 100%;
@@ -35,9 +34,32 @@ body {
 
 /* Containers and Classes */
 
+@media (orientation: landscape) {
+    .infoContainer {
+        padding: 20vh 20vw;
+    }
+    .para {
+        padding: 0 10vw;
+    }
+    .shape {
+        height: 1.5vw;
+    }
+}
+
+@media (orientation: portrait) {
+    .infoContainer {
+        padding: 10vh 10vw;
+    }
+    .para {
+        padding: 0 5vw;
+    }
+    .shape {
+        height: 4vw;
+    }
+}
+
 .infoContainer {
     justify-items: center;
-    padding: 20vh 20vw;
 }
 
 .name {
