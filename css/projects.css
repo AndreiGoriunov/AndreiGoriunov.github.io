@@ -49,6 +49,10 @@ img.BUPlogo {
     height: intrinsic;
 }
 
+.video {
+    background: #dadada;
+}
+
 @media (orientation: landscape) {
     .video {
         max-width: 250px;
