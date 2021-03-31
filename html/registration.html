@@ -6,11 +6,11 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <!-- Font Awesome 5 Icon Setup-->
-    <script src="https://kit.fontawesome.com/bcc2e4d7c9.js" crossorigin="anonymous"></script>
+    <script src="../javascript/form.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/main.css" type="text/css">
-    <link rel="stylesheet" href="../css/contacts.css" type="text/css">
+    <link rel="stylesheet" href="../css/registration.css" type="text/css">
     <title>Contacts</title>
 </head>
 
@@ -24,31 +24,26 @@
                 </a>
             </li>
             <li class="navButton"><a href="./projects.html">Projects</a></li>
-            <li class="navButton active"><a href="#contacts">Contacts</a></li>
+            <li class="navButton"><a href="./contacts.html">Contacts</a></li>
             <!-- <li class="navButton"><a href="./html/assignment.html">Assignment</a></li> -->
-            <li class="navButton"><a href="./registration.html">Assignment</a></li>
+            <li class="navButton active"><a href="#registration">Assignment</a></li>
         </ul>
     </nav>
     <!-- End Navigation -->
 
     <!-- Page Container -->
     <main>
-        <!-- Contact Info -->
-        <p>
-            Contact me anytime at
-            <a href="mailto:andreigoriunov98@gmail.com">andreigoriunov98@gmail.com</a>
-        </p>
 
-
-        <!-- Social Icons-->
-        <div class="social">
-            <a href="https://github.com/AndreiGoriunov">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/andgor/">
-                <i class="fab fa-linkedin"></i>
-            </a>
-        </div>
+        <form name="registration" onsubmit="" preventDefautl>
+            <div class="cardContainer">
+                <label for="firstname">First name</label><br>
+                <input type="text" id="firstname" name="firstname"><br>
+                <label for="lastname">Last name</label><br>
+                <input type="text" id="lastname" name="lastname"><br>
+                <label for="address">Address</label><br>
+                <input type="address" id="address" name="address"><br>
+            </div>
+        </form>
 
     </main>
 </body>

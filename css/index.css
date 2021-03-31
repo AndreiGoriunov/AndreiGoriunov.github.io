@@ -2,11 +2,6 @@
 
 /* Rainbow Animation */
 
-body {
-    color: #fff;
-    font-family: 'Quicksand', sans-serif;
-}
-
 .shapeContainer {
     display: flex;
     flex-direction: row;

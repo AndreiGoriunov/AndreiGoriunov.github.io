@@ -5,12 +5,43 @@
 
 /* P A G E */
 
+:root {
+    /* Colors */
+    --text-color: #fff;
+    --green-color: #72b972;
+    --dark-grey-color: rgba(44, 44, 44, 0.5);
+    --yellow-green-color: #ccce72;
+    --light-grey-color: rgba(128, 128, 128, 0.349);
+    /* Other */
+    --base-border-radius: 10px;
+    --std-padding: 1vw;
+    --std-margin: 1vw;
+}
+
 body {
     /* background: linear-gradient(to bottom, #a8dfff 20%, #9b887e 50%, #080038 100%) no-repeat; */
     background: url('/img/orange-blue-sky.jpg') no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     margin: 0;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.cardContainer {
+    border-radius: var(--base-border-radius);
+    background: var(--dark-grey-color);
+    padding: var(--std-padding);
+}
+
+main {
+    background: var(--light-grey-color);
+    margin: var(--std-margin);
+    margin-top: 80px;
+    border-radius: var(--base-border-radius);
+    height: 100%;
+    width: auto;
+    padding: var(--std-padding);
 }
 
 @media (orientation: landscape) {
@@ -24,6 +55,9 @@ body {
     img.logo {
         width: 45px;
         height: 45px;
+    }
+    .cardContainer {
+        padding: 1vw;
     }
 }
 
@@ -39,16 +73,14 @@ body {
         width: 35px;
         height: 35px;
     }
-}
-
-main {
-    background: rgba(128, 128, 128, 0.349);
-    margin: 20px;
-    margin-top: 80px;
-    border-radius: 15px;
-    height: 100%;
-    width: auto;
-    padding: 20px;
+    .cardContainer {
+        padding: 3vw;
+    }
+    main {
+        margin: 3vw;
+        margin-top: 80px;
+        padding: 3vw;
+    }
 }
 
 
@@ -95,11 +127,11 @@ li.navButton a {
 /*----------------------*/
 
 li.navButton:hover {
-    background: #72b972;
+    background: var(--green-color);
 }
 
 li.navButton.active {
-    background: #72b972;
+    background: var(--green-color);
     transition: none;
 }
 
@@ -116,7 +148,6 @@ li.navButton.active {
 /* T E X T */
 
 p {
-    color: white;
     font-family: 'Quicksand', sans-serif;
     font-size: 1.2em;
 }
@@ -124,7 +155,6 @@ p {
 h1 {
     font-family: 'Quicksand', sans-serif;
     font-size: 2em;
-    color: white;
 }
 
 
@@ -134,13 +164,13 @@ h1 {
 /* L I N K S */
 
 a {
-    color: white;
+    color: #fff;
 }
 
 a:hover {
-    color: #75bd75;
+    color: var(--green-color);
 }
 
 a:visited {
-    color: #ccce72;
+    color: var(--yellow-green-color);
 }

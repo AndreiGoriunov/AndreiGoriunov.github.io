@@ -1,12 +1,9 @@
 /* P R O J E C T   L I S T */
 
 .project {
-    background-color: rgba(44, 44, 44, 0.5);
     margin: 0.1%;
-    border-radius: 15px;
     height: 100%;
     width: auto;
-    padding: 1vw;
     margin-bottom: 10px;
 }
 

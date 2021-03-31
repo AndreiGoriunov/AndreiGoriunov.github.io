@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400');
+form {
+    width: min-content;
+    justify-content: center;
+    display: flex;
+}
+
+input {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 0.9em;
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 5px 0;
+    width: 25vw;
+    outline-width: 1px;
+    outline-color: var(--green-color);
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    font-size: 1em;
+}
+
+@media (orientation: landscape) {}
+
+@media (orientation: portrait) {
+    form {
+        width: auto;
+    }
+    input {
+        width: 50vw;
+    }
+}
