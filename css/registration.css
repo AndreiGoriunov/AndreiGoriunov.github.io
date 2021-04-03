@@ -12,14 +12,19 @@ input {
     border-radius: 3px;
     padding: 3px;
     margin: 5px 0;
-    width: 25vw;
+    width: 500px;
     outline-width: 1px;
     outline-color: var(--green-color);
 }
 
 input[type="radio"] {
     width: auto;
-    margin-right: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background: var(--green-color);
+    color: var(--text-color);
 }
 
 select {
@@ -31,7 +36,7 @@ select {
     border-radius: 3px;
     padding: 3px;
     margin: 5px 0;
-    width: 25vw;
+    width: 505px;
 }
 
 *:focus {
@@ -51,17 +56,32 @@ label {
 
 .radioContainer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: left;
+    padding: 3px;
+    margin: 0;
+    width: 500px;
 }
 
 .radioItem {
     display: inline-block;
+    margin-right: 20px;
+}
+
+.required:after {
+    content: " *";
+    color: var(--green-color);
 }
 
 @media (orientation: landscape) {}
 
 @media (orientation: portrait) {
     input {
-        width: 50vw;
+        width: 300px;
+    }
+    select {
+        width: 305px;
+    }
+    .radioContainer {
+        width: 300px;
     }
 }
