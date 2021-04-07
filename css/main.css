@@ -44,10 +44,44 @@ main {
     padding: var(--std-padding);
 }
 
-@media (orientation: landscape) {
+@media only screen and (max-width: 800px) {
     body {
-        font-size: 1vw;
+        font-size: 18px;
     }
+    .cardContainer {
+        padding: 10px;
+    }
+    main {
+        margin: 5px;
+        margin-top: 80px;
+        padding: 10px;
+    }
+}
+
+
+/*
+@media only screen and (min-width: 800px) {
+    body {
+        background: blue;
+        font-size: 16px;
+    }
+    .cardContainer {
+        padding: 1vw;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    body {
+        background: green;
+        font-size: 16px;
+    }
+    .cardContainer {
+        padding: 1vw;
+    }
+}
+*/
+
+@media (orientation: landscape) {
     li.navButton a {
         padding: 0 10px;
         font-size: 18px;
@@ -56,15 +90,9 @@ main {
         width: 45px;
         height: 45px;
     }
-    .cardContainer {
-        padding: 1vw;
-    }
 }
 
 @media (orientation: portrait) {
-    body {
-        font-size: 2.5vw;
-    }
     li.navButton a {
         padding: 0 5px;
         font-size: 15px;
@@ -72,14 +100,6 @@ main {
     img.logo {
         width: 35px;
         height: 35px;
-    }
-    .cardContainer {
-        padding: 3vw;
-    }
-    main {
-        margin: 3vw;
-        margin-top: 80px;
-        padding: 3vw;
     }
 }
 
