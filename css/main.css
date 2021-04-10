@@ -1,196 +1,195 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400');
-
-/* --------------------------------------------------------------- */
-
-
-/* P A G E */
-
 :root {
-    /* Colors */
-    --text-color: #fff;
-    --green-color: #72b972;
-    --dark-grey-color: rgba(44, 44, 44, 0.5);
-    --yellow-green-color: #ccce72;
-    --light-grey-color: rgba(128, 128, 128, 0.349);
-    /* Other */
-    --base-border-radius: 10px;
-    --std-padding: 1vw;
-    --std-margin: 1vw;
+    --color-neutral-900: #2c2c2c;
+    --color-neutral-900-opacity: #2c2c2ccc;
+    --color-neutral-800: #4d4d4d;
+    --color-neutral-700: #7a7a7a;
+    --color-neutral-700-opacity: #7a7a7a50;
+    --color-accent-500: #72b972;
+    --color-complementary-400: #E17163;
+    --color-primary-100: #fff;
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-accent: 'Open Sans', sans-serif;
+    --base-value: 5px;
+    --nav-height: 45px;
 }
 
-body {
-    /* background: linear-gradient(to bottom, #a8dfff 20%, #9b887e 50%, #080038 100%) no-repeat; */
-    background: url('/img/orange-blue-sky.jpg') no-repeat center center fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+main,
+h1,
+h2,
+h3,
+p {
     margin: 0;
-    color: #fff;
-    font-family: 'Quicksand', sans-serif;
 }
 
-.cardContainer {
-    border-radius: var(--base-border-radius);
-    background: var(--dark-grey-color);
-    padding: var(--std-padding);
-}
 
-main {
-    background: var(--light-grey-color);
-    margin: var(--std-margin);
-    margin-top: 80px;
-    border-radius: var(--base-border-radius);
-    height: 100%;
-    width: auto;
-    padding: var(--std-padding);
-}
-
-@media only screen and (max-width: 800px) {
-    body {
-        font-size: 18px;
-    }
-    .cardContainer {
-        padding: 10px;
-    }
-    main {
-        margin: 5px;
-        margin-top: 80px;
-        padding: 10px;
-    }
-}
+/* Always show scrollbar */
 
 
 /*
-@media only screen and (min-width: 800px) {
-    body {
-        background: blue;
-        font-size: 16px;
-    }
-    .cardContainer {
-        padding: 1vw;
-    }
-}
-
-@media only screen and (min-width: 1280px) {
-    body {
-        background: green;
-        font-size: 16px;
-    }
-    .cardContainer {
-        padding: 1vw;
-    }
+html {
+    overflow-y: scroll;
 }
 */
 
-@media (orientation: landscape) {
-    li.navButton a {
-        padding: 0 10px;
-        font-size: 18px;
-    }
-    img.logo {
-        width: 45px;
-        height: 45px;
-    }
-}
 
-@media (orientation: portrait) {
-    li.navButton a {
-        padding: 0 5px;
-        font-size: 15px;
-    }
-    img.logo {
-        width: 35px;
-        height: 35px;
-    }
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 
-/*=========================================================================*/
+/* Hide scrollbar for IE, Edge and Firefox */
+
+html {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+body {
+    background: url('/img/orange-blue-sky.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    color: var(--color-primary-100);
+    line-height: 1.6;
+    font-size: 1.3125rem;
+}
+
+main {
+    margin-top: calc(var(--nav-height) + 10px);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--ff-accent);
+    font-weight: 600;
+    line-height: 1;
+}
+
+span {
+    font-weight: 500;
+}
+
+abbr {
+    text-decoration: none;
+    border-bottom: var(--color-primary-100) dashed 0.15rem;
+}
 
 
-/* N A V I G A T I O N   B A R */
+/* Containers */
+
+.card {
+    background-color: var(--color-neutral-900-opacity);
+    background: linear-gradient(0deg, var(--color-neutral-900) 0%, var(--color-neutral-900-opacity) 15%);
+    padding: var(--base-value);
+    margin-bottom: var(--base-value);
+}
+
+
+/* Navigation Bar */
+
+nav {
+    font-size: 1rem;
+    height: var(--nav-height);
+    width: 100%;
+    background: linear-gradient(to top, var(--color-neutral-900), var(--color-neutral-800));
+    box-shadow: 0px 1px 10px 2px black;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 100;
+    /* Safari */
+    position: -webkit-fixed;
+    display: flex;
+    justify-content: center;
+}
 
 ul.navBar {
-    height: 60px;
+    height: inherit;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background: linear-gradient(to top, #2c2c2c, #4d4d4d);
-    box-shadow: 0px 1px 6px 2px black;
-    position: -webkit-fixed;
-    /* Safari */
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
+    width: fit-content;
+    display: inline;
 }
 
-li.navButton {
+ul.navBar>li.navButton {
     float: left;
     height: 100%;
     vertical-align: middle;
     transition: background .25s ease-in-out;
 }
 
-li.navButton a {
+ul.navBar>li.navButton a {
     align-items: center;
     display: flex;
-    color: #fff;
+    color: var(--color-primary-100);
     text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.08rem;
     height: 100%;
-    font-family: 'Quicksand', sans-serif;
+    padding: 0 var(--base-value);
 }
 
-
-/*----------------------*/
-
-li.navButton:hover {
-    background: var(--green-color);
+ul.navBar>li.navButton:hover {
+    background: var(--color-accent-500);
 }
 
-li.navButton.active {
-    background: var(--green-color);
+ul.navBar>li.navButton.active {
+    background: var(--color-accent-500);
     transition: none;
 }
 
-
-/*=========================================================================*/
-
-
-/* I M A G E S */
-
-
-/*=========================================================================*/
-
-
-/* T E X T */
-
-p {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.2em;
+ul.navBar>li.navButton a {
+    width: min-content;
 }
 
-h1 {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 2em;
+li.navButton a>img.logo {
+    height: 70%;
 }
 
 
-/* G E N E R A L */
-
-
-/* L I N K S */
+/* Links */
 
 a {
-    color: #fff;
+    color: var(--color-primary-100);
 }
 
 a:hover {
-    color: var(--green-color);
+    color: var(--color-accent-500);
 }
 
 a:visited {
-    color: var(--yellow-green-color);
+    color: var(--color-complementary-400);
+}
+
+
+/* Responsive */
+
+@media only screen and (min-width: 900px) {
+    .card {
+        margin: 0 auto;
+        margin-bottom: var(--base-value);
+        max-width: 850px;
+        border-radius: 5px;
+        padding: calc(var(--base-value)*3);
+        box-shadow: 0px 0px 5px 2px #00000060;
+        -webkit-box-shadow: 0px 0px 5px 2px #00000060;
+        -moz-box-shadow: 0px 0px 5px 2px #00000060;
+    }
+    ul.navBar {
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+    }
 }

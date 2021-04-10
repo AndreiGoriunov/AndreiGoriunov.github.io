@@ -1,16 +1,13 @@
-.social {
-    width: 85px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+.icon {
+    font-size: 2rem;
+    margin-right: 0.7rem;
 }
 
-.social i {
-    color: white;
-    font-size: 35px;
+.icon,
+.icon:visited {
+    color: var(--color-primary-100);
 }
 
-.social i:hover {
-    color: #75bd75;
+.icon:hover {
+    color: var(--color-accent-500);
 }
