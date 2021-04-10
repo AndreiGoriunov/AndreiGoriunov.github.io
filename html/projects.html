@@ -2,59 +2,51 @@
 <html lang="en">
 
 <head>
-    <!-- Icon Setup -->
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS Setup-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css" type="text/css">
-    <link rel="stylesheet" href="../css/projects.css" type="text/css">
-    <title>Projects</title>
+    <link rel="stylesheet" href="../css/projects.css">
+
+    <title>[DEV] Projects</title>
 </head>
 
 <body>
-    <!-- Start Navigation -->
     <nav>
         <ul class="navBar">
             <li class="navButton">
-                <a class="main" href="../index.html">
-                    <img src="../img/KodX_Icon.svg" class="logo" alt="Site Icon">
+                <a href="../index.html">
+                    <img src="../img/icons/KodX_Icon.svg" class="logo" alt="Site Icon">
                 </a>
             </li>
-            <li class="navButton active">
-                <a href="#projects">
-                    Projects
-                </a>
-            </li>
+            <li class="navButton active"><a href="#projects">Projects</a></li>
             <li class="navButton"><a href="./contacts.html">Contacts</a></li>
             <!-- <li class="navButton"><a href="./html/assignment.html">Assignment</a></li> -->
             <li class="navButton"><a href="./registration.html">Assignment</a></li>
         </ul>
     </nav>
-    <!-- End Navigation -->
 
     <main>
-
         <!-- Executive Dashboard Project -->
-
-        <section class="cardContainer project">
+        <section class="card">
             <header>
-                <h1 class="projectName">Executive Dashboard</h1>
+                <h1>Executive Dashboard</h1>
             </header>
 
-            <div class="projectSection">
-                <div class="infoSection">
-                    <p>This project was done as a part of <strong>Office Depot 2019 Internship Case Competition</strong> in a team of 6 people, one of which was working remotely with the rest of us.</p>
-                    <p>In the team I was fulfilling the roles of the <strong>Tech Lead</strong>, as well as <strong>Designer</strong>.</p>
-                    <p>The goal of the project was to create a working executive dashboard prototype, which would display usefull information in the form of graphs, gauges, KPIs, etc. The data would come from a variety of sources, but mainly from Salesforce.
-                        It would then be parsed and displayed to the screen via a web dashboard application <strong><a href="https://www.qlik.com/us/">Qlik</a></strong>. </p>
-                    <p>The great thing about the whole dashboard is that it also works on all mobile devices.</p>
-                </div>
+            <div>
+                <p>This project was done as a part of <a href="https://www.officedepot.com/">Office Depot</a> 2019 Internship Case Competition in a team of 6 people, one of which was working remotely with the rest of us.</p>
+                <p>In the team I was fulfilling the roles of the Tech Lead, as well as Designer.</p>
+                <p>The goal of the project was to create a working executive dashboard prototype, which would display usefull information in the form of graphs, gauges, KPIs, etc. The data would come from a variety of sources, but mainly from Salesforce.
+                    It would then be parsed and displayed to the screen via a web dashboard application <a href="https://www.qlik.com/us/">Qlik</a>. </p>
+                <p>Great thing about the whole dashboard is that it also works on all mobile devices.</p>
+            </div>
 
-                <div class="mediaSection">
-                    <img class="image landscape" alt="Qlik Dashboard creenshot" src="../img/QlikDB.png">
-                    <!--
+            <div class="media">
+                <img class="image landscape" alt="Qlik Dashboard creenshot" src="../img/QlikDB.png">
+                <!--
                         <video height="280" controls muted>
                         <source src="../video/Qlik_Web.mp4" type="video/mp4">
                         Your browser does not support the video tag.
@@ -64,43 +56,41 @@
                         Your browser does not support the video tag.
                     </video>
                     -->
-                </div>
             </div>
+
         </section>
 
-
         <!-- Better UCF PArking App Project -->
-
-        <section class="cardContainer project">
+        <section class="card">
             <header>
-                <h1 class="projectName">Better UCF Parking
-                    <img src="../img/BUCFP_App_icon.png" alt="App Icon" class="BUPlogo">
+                <h1>Better UCF Parking
+                    <img src="../img/BUCFP_App_icon.png" alt="App Icon" class="projectIcon">
                 </h1>
             </header>
 
-            <div class="projectSection">
-                <div class="infoSection">
-                    <p>This project was initiallized in HCI class at UCF. We, as a team of 5 students, had to desing an interface for our
-                        <i>imaginary</i> mobile app. But we decided to build on and improve the design and functionality of the current UCF parking app.</p>
-                </div>
+            <div>
+                <p>This project was initiallized in <abbr title="Human Computer Interface">HCI</abbr> class at UCF. We, as a team of 5 students, had to desing an interface for our imaginary mobile app. But we decided to build on and improve the design and
+                    functionality of the current UCF parking app.
+                </p>
+            </div>
 
-                <div class="mediaSection">
-                    <img class="image" src="../img/BUCFP_Login.png" alt="Login App Screen">
-                    <img class="image" src="../img/BUCFP_Overview.PNG" alt="Overview App Screen">
-                    <img class="image" src="../img/BUCFP_Menu.PNG" alt="Menu App Screen">
-                    <img class="image" src="../img/BUCFP_Garage_1.png" alt="Garage App Screen">
-                </div>
+            <div class="media">
+                <img class="image" src="../img/BUCFP_Login.png" alt="Login App Screen">
+                <img class="image" src="../img/BUCFP_Overview.PNG" alt="Overview App Screen">
+                <img class="image" src="../img/BUCFP_Menu.PNG" alt="Menu App Screen">
+                <img class="image" src="../img/BUCFP_Garage_1.png" alt="Garage App Screen">
+            </div>
 
-                <div class="infoSection">
-                    <p>Later, during my internship at <strong>Office Depot</strong> where I learned
-                        <strong><a href="https://facebook.github.io/react-native/">React-Native</a></strong>, I created a visual prototype which worked on both IOS and Android.
-                        <b><a href="https://github.com/AndreiGoriunov/React-Native/tree/master/BetterUcfParking">GitHub Link</a></b>
-                    </p>
-                    <video class="video" controls muted>
+
+            <p>Later, during my internship at Office Depot where I learned
+                <a href="https://facebook.github.io/react-native/">React-Native</a>, I created a visual prototype which worked on both IOS and Android.
+                <a href="https://github.com/AndreiGoriunov/React-Native/tree/master/BetterUcfParking">GitHub Link</a>
+            </p>
+            <div class="media">
+                <video class="video" controls muted controlsList="nodownload">
                         <source src="../video/BetterUCFparking.MOV" type="video/mp4">
                         Your browser does not support the video tag.
-                    </video>
-                </div>
+                </video>
             </div>
         </section>
 

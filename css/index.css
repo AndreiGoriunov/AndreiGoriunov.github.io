@@ -1,74 +1,38 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400');
+.intro {
+    background: var(--color-neutral-700-opacity);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+h1 {
+    margin: 2rem 0 0.5rem 0;
+    text-align: center;
+}
+
+p {
+    margin: 0 0.5rem 2rem 0.5rem;
+    text-align: left;
+}
+
+@media only screen and (min-width: 900px) {
+    .intro {
+        margin: 0 auto;
+        max-width: 700px;
+        transform: translate(0, 25vh);
+    }
+}
+
 
 /* Rainbow Animation */
 
-.shapeContainer {
-    display: flex;
-    flex-direction: row;
-}
-
-.shape {
+.r-line {
     display: flex;
     border-radius: 50px;
+    height: 5px;
     flex: 1;
-    width: 20vw;
     background: linear-gradient(90deg, #ffb3ba, #ffdfba, #ffffba, #baffc9, #bae1ff, #e3baff, #ffbaea, #ffb3ba);
     background-size: 1800% 100%;
     animation: pastelRainbow 8s ease infinite;
-}
-
-@keyframes pastelRainbow {
-    0% {
-        background-position: 0% 50%
-    }
-    100% {
-        background-position: 100% 50%
-    }
-}
-
-
-/* Containers and Classes */
-
-@media (orientation: landscape) {
-    .infoContainer {
-        padding: 20vh 20vw;
-    }
-    .para {
-        padding: 0 10vw;
-    }
-    .shape {
-        height: 1.5vw;
-    }
-}
-
-@media (orientation: portrait) {
-    .infoContainer {
-        padding: 10vh 10vw;
-    }
-    .para {
-        padding: 0 5vw;
-    }
-    .shape {
-        height: 4vw;
-    }
-}
-
-.infoContainer {
-    justify-items: center;
-}
-
-.name {
-    text-align: center;
-    font-size: 4em;
-    font-family: 'Quicksand', sans-serif;
-    letter-spacing: 2px;
-    word-spacing: 4px;
-    margin: 0 auto;
-}
-
-.para {
-    font-size: 1.2em;
-    padding: 0 10vw;
 }
 
 .breath {
@@ -84,5 +48,14 @@
 @keyframes breath {
     50% {
         text-shadow: 0 0 4px #ffdfba;
+    }
+}
+
+@keyframes pastelRainbow {
+    0% {
+        background-position: 0% 50%
+    }
+    100% {
+        background-position: 100% 50%
     }
 }
