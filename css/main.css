@@ -94,6 +94,7 @@ abbr {
     background: linear-gradient(0deg, var(--color-neutral-900) 0%, var(--color-neutral-900-opacity) 15%);
     padding: var(--base-value);
     margin-bottom: var(--base-value);
+    border-radius: var(--base-value);
 }
 
 
