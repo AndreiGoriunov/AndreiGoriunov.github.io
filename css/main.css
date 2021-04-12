@@ -13,6 +13,9 @@
     --nav-height: 45px;
 }
 
+
+/* Reset */
+
 *,
 *::before,
 *::after {
@@ -29,14 +32,30 @@ p {
 }
 
 
+/*========================================
+#Table of Contents
+
+    1. Layout
+    2. Typography
+    3. Containers
+    4. Navigation
+    5. Media Quieries
+    
+========================================*/
+
+
+/*------------------------------
+    1. Layout
+------------------------------*/
+
+
 /* Always show scrollbar */
 
 
 /*
 html {
     overflow-y: scroll;
-}
-*/
+}*/
 
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -69,9 +88,30 @@ main {
     margin-top: calc(var(--nav-height) + 10px);
 }
 
+footer {
+    background: linear-gradient(to top, var(--color-neutral-900), var(--color-neutral-800));
+    height: calc(var(--nav-height)*2);
+    box-shadow: 0px -1px 10px 2px black;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 0.65rem;
+}
+
+
+/*------------------------------
+    2. Typography
+------------------------------*/
+
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
     font-family: var(--ff-accent);
     font-weight: 600;
     line-height: 1;
@@ -87,18 +127,37 @@ abbr {
 }
 
 
-/* Containers */
+/* Links */
+
+a {
+    color: var(--color-primary-100);
+}
+
+a:hover {
+    color: var(--color-accent-500);
+}
+
+a:visited {
+    color: var(--color-complementary-400);
+}
+
+
+/*------------------------------
+    3. Containers
+------------------------------*/
 
 .card {
     background-color: var(--color-neutral-900-opacity);
     background: linear-gradient(0deg, var(--color-neutral-900) 0%, var(--color-neutral-900-opacity) 15%);
-    padding: var(--base-value);
+    padding: calc(var(--base-value)*2);
     margin-bottom: var(--base-value);
     border-radius: var(--base-value);
 }
 
 
-/* Navigation Bar */
+/*------------------------------
+    4. Navigation Bar
+------------------------------*/
 
 nav {
     font-size: 1rem;
@@ -131,6 +190,7 @@ nav li.navButton {
     height: 100%;
     vertical-align: middle;
     transition: background .25s ease-in-out;
+    border-radius: var(--base-value);
 }
 
 nav li.navButton a {
@@ -161,24 +221,13 @@ li.navButton a img.logo {
 }
 
 
-/* Links */
-
-a {
-    color: var(--color-primary-100);
-}
-
-a:hover {
-    color: var(--color-accent-500);
-}
-
-a:visited {
-    color: var(--color-complementary-400);
-}
-
-
-/* Responsive */
+/*------------------------------
+    5. Media Queries
+------------------------------*/
 
 @media only screen and (min-width: 900px) {
+    /* Unzoom the Image for Mobile */
+    body:hover {}
     .card {
         margin: 0 auto;
         margin-bottom: var(--base-value);
