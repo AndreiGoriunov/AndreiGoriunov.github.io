@@ -1,11 +1,7 @@
 header {
     margin-bottom: 0.5rem;
     color: var(--color-accent-500);
-    text-shadow: 0 0 5px black
-}
-
-p {
-    margin-bottom: 0.55rem;
+    text-shadow: 0 0 5px #000;
 }
 
 .media {
