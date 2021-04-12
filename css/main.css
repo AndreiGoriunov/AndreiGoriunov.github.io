@@ -121,18 +121,19 @@ ul.navBar {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: fit-content;
-    display: inline;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
-ul.navBar>li.navButton {
+nav li.navButton {
     float: left;
     height: 100%;
     vertical-align: middle;
     transition: background .25s ease-in-out;
 }
 
-ul.navBar>li.navButton a {
+nav li.navButton a {
     align-items: center;
     display: flex;
     color: var(--color-primary-100);
@@ -142,20 +143,20 @@ ul.navBar>li.navButton a {
     padding: 0 var(--base-value);
 }
 
-ul.navBar>li.navButton:hover {
+nav li.navButton:hover {
     background: var(--color-accent-500);
 }
 
-ul.navBar>li.navButton.active {
+nav li.navButton.active {
     background: var(--color-accent-500);
     transition: none;
 }
 
-ul.navBar>li.navButton a {
+nav li.navButton a {
     width: min-content;
 }
 
-li.navButton a>img.logo {
+li.navButton a img.logo {
     height: 70%;
 }
 
