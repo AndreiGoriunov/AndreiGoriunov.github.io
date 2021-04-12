@@ -121,10 +121,6 @@ p {
     margin-bottom: 0.6rem;
 }
 
-span {
-    font-weight: 500;
-}
-
 abbr {
     text-decoration: none;
     border-bottom: var(--color-primary-100) dashed 0.15rem;
