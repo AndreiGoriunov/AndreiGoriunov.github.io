@@ -1,7 +1,3 @@
-/**
- * I have a question. Why do we use js form validation, if HTML5 has it build in? Even with RegEx.
- */
-
 function validateForm() {
     // First Name
     if (document.registration.firstname.value == "") {
