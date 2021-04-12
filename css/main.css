@@ -152,6 +152,8 @@ a:visited {
     padding: calc(var(--base-value)*2);
     margin-bottom: var(--base-value);
     border-radius: var(--base-value);
+    /* Not supported by all browsers*/
+    backdrop-filter: blur(10px);
 }
 
 

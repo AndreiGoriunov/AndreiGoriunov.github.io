@@ -2,6 +2,7 @@
     background: var(--color-neutral-700-opacity);
     border-radius: 5px;
     margin: 5px;
+    backdrop-filter: blur(10px);
 }
 
 h1 {
