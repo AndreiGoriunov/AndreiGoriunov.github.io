@@ -10,10 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css" type="text/css">
     <link rel="stylesheet" href="../css/contacts.css">
-
-    <title>Contacts</title>
-
+    <script src="../javascript/main.js"></script>
     <script src="https://kit.fontawesome.com/bcc2e4d7c9.js" crossorigin="anonymous"></script>
+    <title>Contacts</title>
 </head>
 
 <body>
@@ -26,8 +25,14 @@
             </li>
             <li class="navButton"><a href="./projects.html">Projects</a></li>
             <li class="navButton active"><a href="#contacts">Contacts</a></li>
-            <!-- <li class="navButton"><a href="./html/assignment.html">Assignment</a></li> -->
-            <li class="navButton"><a href="./registration.html">Assignment</a></li>
+            <li class="navButton" id="dropdown-navbutton">
+                <div class="dropdown" onclick="dropdownFunction()">
+                    <a href="#">Live Pages<span id="dropdown-arrow"> &#9660;</span></a>
+                    <div class="dropdown-content" id="dropdown">
+                        <a href="./registration.html">Registration Form</a>
+                    </div>
+                </div>
+            </li>
         </ul>
     </nav>
 

@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css" type="text/css">
     <link rel="stylesheet" href="../css/registration.css">
-    <script src="../javascript/form.js"></script>
+    <script src="../javascript/main.js"></script>
+    <script src="../javascript/registration.js"></script>
     <title>Assignment</title>
 </head>
 
@@ -24,15 +25,21 @@
             </li>
             <li class="navButton"><a href="./projects.html">Projects</a></li>
             <li class="navButton"><a href="./contacts.html">Contacts</a></li>
-            <!-- <li class="navButton"><a href="./html/assignment.html">Assignment</a></li> -->
-            <li class="navButton active"><a href="#registration">Assignment</a></li>
+            <li class="navButton active" id="dropdown-navbutton">
+                <div class="dropdown" onclick="dropdownFunction()">
+                    <a href="#">Live Pages<span id="dropdown-arrow"> &#9660;</span></a>
+                    <div class="dropdown-content" id="dropdown">
+                        <a href="./registration.html">Registration Form</a>
+                    </div>
+                </div>
+            </li>
         </ul>
     </nav>
 
     <main>
         <section class="card">
             <header>
-                <h1>Page for <span>UCF</span> assignments</h1>
+                <h1>Page for <span id="yellow">UCF</span> assignments</h1>
             </header>
             <div class="formContainer">
                 <form name="registration" onsubmit="return validateForm()">

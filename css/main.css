@@ -7,6 +7,7 @@
     --color-accent-500: #72b972;
     --color-complementary-400: #E17163;
     --color-primary-100: #fff;
+    --color-primary-100-opacity: #ffffffcc;
     --ff-primary: 'Roboto', sans-serif;
     --ff-accent: 'Open Sans', sans-serif;
     --base-value: 5px;
@@ -96,9 +97,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-footer p {
     font-size: 0.65rem;
 }
 
@@ -162,6 +160,7 @@ a:visited {
 ------------------------------*/
 
 nav {
+    user-select: none;
     font-size: 1rem;
     height: var(--nav-height);
     width: 100%;
@@ -169,15 +168,14 @@ nav {
     box-shadow: 0px 1px 10px 2px black;
     position: fixed;
     top: 0;
-    overflow: hidden;
-    z-index: 100;
+    z-index: 10;
     /* Safari */
     position: -webkit-fixed;
     display: flex;
     justify-content: center;
 }
 
-ul.navBar {
+nav ul.navBar {
     height: inherit;
     list-style-type: none;
     margin: 0;
@@ -188,14 +186,12 @@ ul.navBar {
 }
 
 nav li.navButton {
-    float: left;
     height: 100%;
-    vertical-align: middle;
-    transition: background .25s ease-in-out;
+    transition: all .25s ease-in-out;
     border-radius: var(--base-value);
 }
 
-nav li.navButton a {
+nav li.navButton>a {
     align-items: center;
     display: flex;
     color: var(--color-primary-100);
@@ -203,6 +199,7 @@ nav li.navButton a {
     letter-spacing: 0.08rem;
     height: 100%;
     padding: 0 var(--base-value);
+    width: min-content;
 }
 
 nav li.navButton:hover {
@@ -214,12 +211,83 @@ nav li.navButton.active {
     transition: none;
 }
 
-nav li.navButton a {
-    width: min-content;
+nav li.navButton a img.logo {
+    width: 2rem;
 }
 
-li.navButton a img.logo {
-    height: 70%;
+
+/* Dropdown */
+
+.dropdown {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.dropdown a {
+    text-decoration: none;
+    letter-spacing: 0.08rem;
+    margin: 0 var(--base-value);
+    color: var(--color-primary-900);
+}
+
+.dropdown-content {
+    top: var(--nav-height);
+    display: none;
+    opacity: 100%;
+    position: absolute;
+    background: var(--color-primary-100-opacity);
+    border-radius: var(--base-value);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 0px 5px 10px -2px #2c2c2c;
+    border-top: solid var(--base-value) var(--color-accent-500);
+    backdrop-filter: blur(10px);
+    animation: dropdown .25s ease-in-out;
+    min-width: 160%;
+}
+
+.dropdown-content>a {
+    display: block;
+    margin: 0;
+    padding: calc(var(--base-value)*2) var(--base-value);
+    transition: background .25s ease-in-out;
+    color: var(--color-neutral-900);
+}
+
+span#dropdown-arrow {
+    font-size: 0.6em;
+}
+
+.dropdown-content>a:last-of-type {
+    border-bottom-left-radius: var(--base-value);
+    border-bottom-right-radius: var(--base-value);
+}
+
+.show {
+    display: block;
+}
+
+.active-dropdown {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    background: var(--color-accent-500);
+}
+
+.dropdown-content>a:hover {
+    background: var(--color-accent-500);
+}
+
+@keyframes dropdown {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 
 
@@ -242,9 +310,12 @@ li.navButton a img.logo {
         -webkit-box-shadow: 0px 0px 5px 2px #00000060;
         -moz-box-shadow: 0px 0px 5px 2px #00000060;
     }
-    ul.navBar {
+    nav ul.navBar {
         width: 600px;
         display: flex;
         justify-content: space-between;
+    }
+    .dropdown {
+        justify-content: flex-start;
     }
 }
