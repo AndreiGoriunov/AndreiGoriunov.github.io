@@ -48,11 +48,13 @@ p {
 .circles:before {
     background-color: #ffb3ba;
     animation: orbit1 10s linear infinite;
+    -webkit-animation: orbit1 10s linear infinite;
 }
 
 .circles:after {
     background-color: #bae1ff;
     animation: orbit2 10s linear infinite;
+    -webkit-animation: orbit2 10s linear infinite;
 }
 
 @keyframes orbit1 {
@@ -65,6 +67,24 @@ p {
 }
 
 @keyframes orbit2 {
+    0% {
+        transform: rotate(0deg) translateX(-12vw);
+    }
+    100% {
+        transform: rotate(360deg) translateX(-12vw);
+    }
+}
+
+@-webkit-keyframes orbit1 {
+    0% {
+        transform: rotate(0deg) translateX(12vw);
+    }
+    100% {
+        transform: rotate(360deg) translateX(12vw);
+    }
+}
+
+@-webkit-keyframes orbit2 {
     0% {
         transform: rotate(0deg) translateX(-12vw);
     }
