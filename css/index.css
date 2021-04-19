@@ -1,10 +1,3 @@
-.intro {
-    background: var(--color-neutral-700-opacity);
-    border-radius: 5px;
-    margin: 5px;
-    backdrop-filter: blur(10px);
-}
-
 h1 {
     margin: 2rem 0 0.5rem 0;
     text-align: center;
@@ -15,16 +8,73 @@ p {
     text-align: left;
 }
 
-@media only screen and (min-width: 900px) {
-    .intro {
-        margin: 0 auto;
-        max-width: 700px;
-        transform: translate(0, 25vh);
+
+/*------------------------------
+    1. Containers
+------------------------------*/
+
+.intro {
+    background: var(--color-neutral-700-opacity);
+    border-radius: 5px;
+    margin: 5px;
+    backdrop-filter: blur(10px);
+}
+
+
+/*------------------------------
+    2. Animations
+------------------------------*/
+
+
+/* Circles */
+
+.circles {
+    background-color: #bae1ffe3;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+}
+
+.circles:before,
+.circles:after {
+    opacity: 50%;
+    position: absolute;
+    border-radius: 50%;
+    content: '';
+    height: 20vw;
+    width: 20vw;
+}
+
+.circles:before {
+    background-color: #ffb3ba;
+    animation: orbit1 10s linear infinite;
+}
+
+.circles:after {
+    background-color: #bae1ff;
+    animation: orbit2 10s linear infinite;
+}
+
+@keyframes orbit1 {
+    0% {
+        transform: rotate(0deg) translateX(12vw);
+    }
+    100% {
+        transform: rotate(360deg) translateX(12vw);
+    }
+}
+
+@keyframes orbit2 {
+    0% {
+        transform: rotate(0deg) translateX(-12vw);
+    }
+    100% {
+        transform: rotate(360deg) translateX(-12vw);
     }
 }
 
 
-/* Rainbow Animation */
+/* Rainbow */
 
 .r-line {
     display: flex;
@@ -58,5 +108,27 @@ p {
     }
     100% {
         background-position: 100% 50%
+    }
+}
+
+
+/*------------------------------
+    5. Media Queries
+------------------------------*/
+
+@media only screen and (min-width: 900px) {
+    .intro {
+        margin: 0 auto;
+        max-width: 700px;
+        transform: translate(0, 25vh);
+    }
+    .circles {
+        top: 45%;
+        left: 45%;
+    }
+    .circles:before,
+    .circles:after {
+        height: 10vw;
+        width: 10vw;
     }
 }
