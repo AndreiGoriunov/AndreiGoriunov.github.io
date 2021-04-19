@@ -2,10 +2,6 @@ header {
     margin-bottom: 0.5rem;
 }
 
-span#yellow {
-    color: goldenrod;
-}
-
 input,
 select {
     font-size: 0.9rem;

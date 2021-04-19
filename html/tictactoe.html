@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css" type="text/css">
-    <link rel="stylesheet" href="../css/contacts.css">
+    <link rel="stylesheet" href="../css/tictactoe.css">
     <script src="../javascript/main.js" defer></script>
-    <script src="https://kit.fontawesome.com/bcc2e4d7c9.js" crossorigin="anonymous"></script>
-    <title>Contacts</title>
+    <script src="../javascript/tictactoe.js" defer></script>
+    <title>Tic Tac Toe</title>
 </head>
 
 <body>
@@ -24,8 +24,8 @@
                 </a>
             </li>
             <li class="navButton"><a href="./projects.html">Projects</a></li>
-            <li class="navButton active"><a href="#contacts">Contacts</a></li>
-            <li class="navButton" id="dropdown-navbutton">
+            <li class="navButton"><a href="./contacts.html">Contacts</a></li>
+            <li class="navButton active" id="dropdown-navbutton">
                 <div class="dropdown" onclick="dropdownFunction()">
                     <a href="#">Live Pages<span id="dropdown-arrow"> &#9660;</span></a>
                     <div class="dropdown-content" id="dropdown">
@@ -39,13 +39,24 @@
 
     <main>
         <section class="card">
-            <p>
-                Contact me anytime at
-                <a href="mailto:andreigoriunov98@gmail.com">andreigoriunov98@gmail.com</a>
-            </p>
-            <div>
-                <a class="icon" href="https://github.com/AndreiGoriunov"><i class="fab fa-github"></i></a>
-                <a class="icon" href="https://www.linkedin.com/in/andgor/"><i class="fab fa-linkedin"></i></a>
+            <h1>Tic <span id="yellow">Tac</span> Toe</h1>
+            <p>Simple game made using javascript</p>
+            <div class="board-container">
+                <div class="board" id="board">
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                </div>
+                <div class="message" id="message">
+                    <div data-message-text>X Wins!</div>
+                    <button id="restart-button">Restart</button>
+                </div>
             </div>
         </section>
     </main>
