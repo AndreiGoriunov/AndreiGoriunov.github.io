@@ -8,30 +8,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/main.css" type="text/css">
-    <link rel="stylesheet" href="../css/3dCube.css">
-
-    <script src="../javascript/main.js"></script>
-    <title>Contacts</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <script src="./javascript/main.js" defer></script>
+    <title>Andrei's Personal Page</title>
+    <!-- Open Graph -->
+    <!--
+    <meta property="og:site_name" content="Andrei's Personal Portfolio">
+    <meta property="og:url" content="https://andreigoriunov.github.io/">
+    <meta property="og:title" content="Andrei Goriunov's Portfolio">
+    <meta property="og:description" content="Hi, I'm a senior student at University of Central Florida, studying Information Technology. I built this portfolio to showcase my personal projects and share my current interests.">
+    <meta property="og:image" content="./favicon.ico">
+    <meta property="og:image:width" content="640">
+    <meta property="og:image:height" content="640">
+    -->
 </head>
 
 <body>
     <nav>
         <ul class="navBar">
             <li class="navButton">
-                <a href="../index.html">
-                    <img src="../img/icons/KodX_Icon.svg" class="logo" alt="Site Icon">
+                <a href="index.html">
+                    <img src="./img/icons/KodX_Icon.svg" class="logo" alt="Site Icon">
                 </a>
             </li>
-            <li class="navButton"><a href="./projects.html">Projects</a></li>
-            <li class="navButton"><a href="./contacts.html">Contacts</a></li>
-            <li class="navButton active" id="dropdown-navbutton">
+            <li class="navButton"><a href="./html/projects.html">Projects</a></li>
+            <li class="navButton"><a href="./html/contacts.html">Contacts</a></li>
+            <li class="navButton" id="dropdown-navbutton">
                 <div class="dropdown" onclick="dropdownFunction()">
-                    <a href="#">Live Pages<span id="dropdown-arrow"> &#9660;</span></a>
+                    <a>Live Pages<span id="dropdown-arrow"> &#9660;</span></a>
                     <div class="dropdown-content" id="dropdown">
-                        <a href="./registration.html">Registration Form</a>
-                        <a href="./tictactoe.html">TicTacToe Game</a>
-                        <a href="#3dCube">3D Cube</a>
+                        <a href="./html/registration.html">Registration Form</a>
+                        <a href="./html/tictactoe.html">Tic Tac Toe Game</a>
+                        <!--<a href="./html/3dCube.html">3D Cube</a>-->
                     </div>
                 </div>
             </li>
@@ -39,29 +48,46 @@
     </nav>
 
     <main>
-        <section class="card">
-            <div class="scene-container">
-                <div class="scene">
-                    <div class="floor"></div>
-                    <div class="cube">
-                        <div class="front"></div>
-                        <div class="back"></div>
-                        <div class="left"></div>
-                        <div class="right"></div>
-                        <div class="top"></div>
-                        <div class="bottom"></div>
-                    </div>
-                    <div class="ball"></div>
-                </div>
+        <section class="intro-container">
+            <div class="circles"></div>
+            <div class="card intro">
+                <div class="r-line"></div>
+                <h1 class="breath">Andrei Goriunov</h1>
+                <p>
+                    Hi, I'm a student graduate from the University of Central Florida with a degree at Information Technology. I built this portfolio to showcase my personal projects and share my current interests.
+                </p>
+                <div class="r-line"></div>
+            </div>
+            <!--
+            <div class="moreAboutMe-container">
+                <p>More about Me</p>
+                <div class="arrow"></div>
+            </div>
+            -->
+        </section>
+        <!--
+        <section class="more-container">
+            <div class="card card-more h1">
+                <h1>And so the story begins...</h1>
             </div>
         </section>
+        <section class="more-container bg-black">
+            <div class="card card-more h1" style="border: solid 2px #fff">
+                <h1 class="fade-in appear">Work Experience</h1>
+            </div>
+        </section>
+        <section class="more-container bg-black">
+            <div class="card card-more h1">
+                <h1>Education</h1>
+            </div>
+        </section>
+        <section class="more-container bg-black">
+            <div class="card card-more h1">
+                <h1>Skills</h1>
+            </div>
+        </section>
+        -->
     </main>
-</body>
-
-</html>
-</div>
-</section>
-</main>
 </body>
 
 </html>
