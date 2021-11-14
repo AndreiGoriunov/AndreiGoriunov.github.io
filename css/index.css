@@ -13,13 +13,92 @@ p {
     1. Containers
 ------------------------------*/
 
+.intro-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+
 .intro {
+    height: min-content;
     background: var(--color-neutral-700-opacity);
     border-radius: 5px;
     margin: 5px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     z-index: 2;
+}
+
+
+/* Transitional Arrow */
+
+.moreAboutMe-container {
+    position: absolute;
+    bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.moreAboutMe-container .arrow {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    border: 10px solid #eecbcfa6;
+    border-style: inset;
+    border-top: 0;
+    border-left: 0;
+}
+
+.moreAboutMe-container p {
+    margin: 0;
+    z-index: 2;
+}
+
+
+/* More container & Extra styles */
+
+.more-container {
+    background: linear-gradient(0deg, #000 2%, transparent 100%);
+    width: 100%;
+    height: 120vh;
+}
+
+.bg-black {
+    background: #000;
+}
+
+.ai-center {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-more {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: transparent;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.card-more.h1 {
+    font-size: 2rem;
+}
+
+
+/* Fade-in & Appear */
+
+.fade-in {
+    opacity: 0;
+    transition: opacity .5s ease-in;
+}
+
+.fade-in .appear {
+    opacity: 1;
 }
 
 
@@ -142,7 +221,8 @@ p {
     .intro {
         margin: 0 auto;
         max-width: 700px;
-        transform: translate(0, 25vh);
+        position: relative;
+        top: 25vh;
     }
     .circles {
         top: 45%;
