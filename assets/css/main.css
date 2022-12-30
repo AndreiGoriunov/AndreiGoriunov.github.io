@@ -83,6 +83,7 @@ html {
     scrollbar-width: none;
     /* 16px by default */
     font-size: 100%;
+    background-color: var(--color-neutral-900);
 }
 
 body {
@@ -96,7 +97,8 @@ body {
 }
 
 main {
-    margin-top: calc(var(--nav-height) + 10px);
+    padding-top: calc(var(--nav-height) + 10px);
+    min-height: 100vh;
 }
 
 footer {

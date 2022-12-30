@@ -34,9 +34,7 @@
 .sound-button__name {
     margin: 0;
     text-align: center;
-    font-size: 0.75rem;
-    line-height: 0.75rem;
     text-overflow: ellipsis;
     word-break: break-all;
-    /* text-shadow: #000 0 0 3px; */
+    text-shadow: #000 0 0 3px;
 }
