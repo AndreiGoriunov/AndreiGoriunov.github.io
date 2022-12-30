@@ -15,6 +15,11 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    cursor: pointer;
+}
+
+.soundboard-container__sound-button:hover {
+    background: #65a36598;
 }
 
 .soundboard-container__sound-button>audio {
