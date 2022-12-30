@@ -32,6 +32,14 @@ p {
     margin: 0;
 }
 
+button {
+    outline: none;
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+}
+
 
 /*========================================
 #Table of Contents
@@ -69,20 +77,21 @@ html {
 /* Hide scrollbar for IE, Edge and Firefox */
 
 html {
-    -ms-overflow-style: none;
     /* IE and Edge */
-    scrollbar-width: none;
+    -ms-overflow-style: none;
     /* Firefox */
+    scrollbar-width: none;
+    /* 16px by default */
+    font-size: 100%;
 }
 
 body {
-    background: url('/img/orange-blue-sky.jpg') no-repeat center center fixed;
+    background: url('/assets/img/orange-blue-sky.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: var(--ff-primary);
     font-weight: 400;
     color: var(--color-primary-100);
     line-height: 1.6;
-    font-size: 1.3125rem;
     z-index: -1;
 }
 
@@ -155,7 +164,6 @@ a:visited {
     padding: calc(var(--base-value)*2);
     margin-bottom: var(--base-value);
     border-radius: var(--base-value);
-    /* Not supported by all browsers*/
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
@@ -167,7 +175,6 @@ a:visited {
 
 nav {
     user-select: none;
-    font-size: 1rem;
     height: var(--nav-height);
     width: 100%;
     background: linear-gradient(to top, var(--color-neutral-900), var(--color-neutral-800));
@@ -293,6 +300,7 @@ span#dropdown-arrow {
     0% {
         opacity: 0%;
     }
+
     100% {
         opacity: 100%;
     }
@@ -307,10 +315,12 @@ span#dropdown-arrow {
 /* For Desktops */
 
 @media only screen and (min-width: 900px) {
+
     /* Unzoom the Image for Mobile Quick fix TODO*/
     body:hover {
         transform: none;
     }
+
     .card {
         margin: 0 auto;
         margin-bottom: var(--base-value);
@@ -319,10 +329,12 @@ span#dropdown-arrow {
         padding: calc(var(--base-value)*3);
         box-shadow: 0px 0px 5px 2px #00000050;
     }
+
     nav ul.navBar {
         width: 600px;
         justify-content: space-between;
     }
+
     .dropdown {
         justify-content: flex-start;
     }
