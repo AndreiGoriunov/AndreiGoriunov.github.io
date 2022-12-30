@@ -22,6 +22,7 @@ function createSoundButtons() {
         // addEventListener
         soundButton.addEventListener("click", () => {
             const audio = soundButton.getElementsByTagName("audio")[0];
+            audio.currentTime = 0;
             audio.play();
         });
         soundButtonsArray.push(soundButton);
