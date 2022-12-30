@@ -1,4 +1,4 @@
-const audioFiles = ["aughh.mp3", "lyagushka.mp3", "woo.mp3", "woo.mp3", "woo.mp3"];
+const audioFiles = ["aughh.mp3", "lyagushka.mp3", "woo.mp3"];
 
 
 function createSoundButtons() {
@@ -8,10 +8,12 @@ function createSoundButtons() {
     const soundButtonsArray = [];
 
     audioFiles.forEach(fileName => {
-        const fileExtension = fileName.split('.').pop();
+        const filePartsArray = fileName.split('.')
+        const fileExtension = filePartsArray.pop();
+        const fileNameWithoutExtension = filePartsArray.join('.');
         const filePath = `/assets/audio/soundboard/${fileName}`
         const soundButtonContentsTemplate = `
-            <p class="sound-button__name">${fileName}</p>
+            <p class="sound-button__name">${fileNameWithoutExtension}</p>
             <audio src="${filePath}" type="audio/${fileExtension}" ></audio>
             `;
         const soundButton = document.createElement("button");
