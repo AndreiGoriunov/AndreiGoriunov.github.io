@@ -32,5 +32,9 @@ function createSoundButtons() {
     soundboardContainer.appendChild(fragment);
 }
 
+function uploadSound() {
+    const soundFile = document.getElementById("sound__file")
+}
+
 createSoundButtons();
 

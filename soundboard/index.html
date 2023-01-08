@@ -41,10 +41,19 @@
                 <!-- <button class="soundboard-container__sound-button">
                     <div class="sound-button__icon">&#9655;</div>
                     <p class="sound-button__name">Sound Name</p>
-                    <audio src="${filePath}" type="audio/${fileExtension}" ></audio>
+                    <audio src="${filePath}" type="audio/${fileExtension}"></audio>
                 </button> -->
             </div>
-
+        </section>
+        <section class="card" onsubmit="uploadSound()">
+            <form action="post" class="form-horizontal">
+                <input type="file" name="sound__file" id="sound__file">
+                <div>
+                    <label for="sound_name">Sound Name</label>
+                    <input type="text" name="sound__name" id="sound__name">
+                </div>
+                <input type="button" value="Upload">
+            </form>
         </section>
     </main>
     <footer>

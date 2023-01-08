@@ -78,7 +78,7 @@ html {
 
 html {
     /* IE and Edge */
-    -ms-overflow-style: none;
+    -webkit-overflow-style: none;
     /* Firefox */
     scrollbar-width: none;
     /* 16px by default */
@@ -168,6 +168,24 @@ a:visited {
     border-radius: var(--base-value);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+}
+
+.form-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-horizontal>* {
+    flex: 1;
+    margin: 0 1em;
+}
+
+.form-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 
