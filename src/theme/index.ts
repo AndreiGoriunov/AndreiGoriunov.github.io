@@ -1,5 +1,6 @@
 import { extendBaseTheme } from '@chakra-ui/react'
 import { Button } from './components'
+import orangeBlueSky from '../assets/images/orange-blue-sky.jpg'
 
 const theme = extendBaseTheme({
     colors: {
@@ -39,7 +40,7 @@ const theme = extendBaseTheme({
                 backgroundColor: 'dark900',
                 color: 'fore',
                 fontSize: '1.6rem',
-                background: "url('/src/assets/images/orange-blue-sky.jpg') no-repeat center bottom / cover fixed",
+                background: `url(${orangeBlueSky}) no-repeat center bottom / cover fixed`,
             },
             main: {
                 display: 'flex',
