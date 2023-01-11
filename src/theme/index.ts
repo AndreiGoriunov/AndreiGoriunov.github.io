@@ -35,7 +35,6 @@ const theme = extendBaseTheme({
                 fontSize: '10px',
             },
             body: {
-                // paddingLeft: 'calc(100vw - 100%)',
                 fontFamily: 'primary',
                 backgroundColor: 'dark900',
                 color: 'fore',
