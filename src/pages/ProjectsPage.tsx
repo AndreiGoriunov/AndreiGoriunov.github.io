@@ -1,45 +1,64 @@
-import bucfp4_f from '../assets/images/projects/better_ucf_parking/bucfp_garage.jpg'
-import bucfp4_t from '../assets/images/projects/better_ucf_parking/bucfp_garage_thumb.jpg'
-import bucfp1_f from '../assets/images/projects/better_ucf_parking/bucfp_login.jpg'
-import bucfp1_t from '../assets/images/projects/better_ucf_parking/bucfp_login_thumb.jpg'
-import bucfp3_f from '../assets/images/projects/better_ucf_parking/bucfp_menu.jpg'
-import bucfp3_t from '../assets/images/projects/better_ucf_parking/bucfp_menu_thumb.jpg'
-import bucfp2_f from '../assets/images/projects/better_ucf_parking/bucfp_overview.jpg'
-import bucfp2_t from '../assets/images/projects/better_ucf_parking/bucfp_overview_thumb.jpg'
-import exD1_f from '../assets/images/projects/executive_dashboard/qlik_db.jpg'
-import exD1_t from '../assets/images/projects/executive_dashboard/qlik_db_thumb.jpg'
-import Gallery from '../components/Gallery'
-import ProjectCard from '../components/ProjectCard'
-
-const execDashGalleryImages = [
-    { srcThumb: exD1_t, srcFull: exD1_f, alt: 'dashboard' },
-]
-
-const bucfpGalleryItems = [
-    { srcThumb: bucfp1_t, srcFull: bucfp1_f, alt: 'login' },
-    { srcThumb: bucfp2_t, srcFull: bucfp2_f, alt: 'overview' },
-    { srcThumb: bucfp3_t, srcFull: bucfp3_f, alt: 'menu' },
-    { srcThumb: bucfp4_t, srcFull: bucfp4_f, alt: 'garage' },
-]
+import { useEffect, useState } from 'react';
+import ProjectCard from '../components/ProjectCard';
+import Gallery from '../components/Gallery';
+import { ProjectData } from '../types/project';
 
 function ProjectsPage() {
+    const [projects, setProjects] = useState<ProjectData[]>([]);
+    const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState<string | null>(null);
+
+    useEffect(() => {
+        const fetchProjects = async () => {
+            try {
+                // In a real app, you might fetch this from an API
+                const response = await import('../data/projects.json');
+                setProjects(response.default);
+            } catch (err) {
+                console.error('Failed to load projects:', err);
+                setError('Failed to load projects. Please try again later.');
+            } finally {
+                setIsLoading(false);
+            }
+        };
+
+        fetchProjects();
+    }, []);
+
+    if (isLoading) {
+        return <div>Loading projects...</div>;
+    }
+
+    if (error) {
+        return <div className="text-red-500">{error}</div>;
+    }
 
     return (
-        <>
-            <ProjectCard title='Executive Dashboard'>
-                <p>This project was done as a part of Office Depot 2019 Internship Case Competition in a team of 6 people, one of which was working remotely with the rest of us.</p>
-                <p>In the team I was fulfilling the roles of the Tech Lead and Designer.</p>
-                <p>The goal of the project was to create a working executive dashboard prototype, which would display usefull information in the form of graphs, gauges, KPIs, etc. The data would come from a variety of sources, but mainly from Salesforce. It would then be parsed and displayed to the screen via a web dashboard application Qlik.</p>
-                <p>The dashboard would be accessible on desktop and mobile devices.</p>
-                <Gallery galleryItems={execDashGalleryImages} />
-            </ProjectCard>
-            <ProjectCard title='Better UCF Parking'>
-                <p>This project was initiallized in HCI class at UCF. We, as a team of 5 students, had to desing an interface for our imaginary mobile app. But we decided to build on and improve the design and functionality of the current UCF parking app.</p>
-                <p>Later, during my internship at Office Depot where I learned React-Native, I created a visual prototype which worked on both IOS and Android.</p>
-                <Gallery galleryItems={bucfpGalleryItems} />
-            </ProjectCard>
-        </>
-    )
+        <div className="space-y-8">
+            {projects.map((project) => (
+                <ProjectCard key={project.id} title={project.title}>
+                    <div className="space-y-4">
+                        {project.description.map((paragraph, index) => (
+                            <p key={index}>{paragraph}</p>
+                        ))}
+                        {project.media && project.media.length > 0 && (
+                            <Gallery galleryItems={project.media} />
+                        )}
+                        {project.link && (
+                            <a 
+                                href={project.link} 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="text-blue-500 hover:underline"
+                            >
+                                View Project
+                            </a>
+                        )}
+                    </div>
+                </ProjectCard>
+            ))}
+        </div>
+    );
 }
 
-export default ProjectsPage
+export default ProjectsPage;

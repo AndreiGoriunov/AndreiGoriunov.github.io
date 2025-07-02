@@ -1,4 +1,4 @@
-import { defineStyleConfig, useAriaHidden } from '@chakra-ui/react'
+import {defineStyleConfig} from '@chakra-ui/react'
 
 export default defineStyleConfig({
     // Styles for the base style
@@ -42,7 +42,7 @@ export default defineStyleConfig({
             display: 'flex',
             alignItems: 'center',
             overflow: 'hidden',
-            
+
             _after: {
                 zIndex: 3,
                 content: "''",

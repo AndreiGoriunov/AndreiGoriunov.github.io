@@ -1,0 +1,59 @@
+[
+  {
+    "id": "executive-dashboard",
+    "title": "Executive Dashboard",
+    "description": [
+      "This project was done as a part of Office Depot 2019 Internship Case Competition in a team of 6 people, one of which was working remotely with the rest of us.",
+      "In the team I was fulfilling the roles of the Tech Lead and Designer.",
+      "The goal of the project was to create a working executive dashboard prototype, which would display useful information in the form of graphs, gauges, KPIs, etc. The data would come from a variety of sources, but mainly from Salesforce. It would then be parsed and displayed to the screen via a web dashboard application Qlik.",
+      "The dashboard would be accessible on desktop and mobile devices."
+    ],
+    "media": [
+      {
+        "srcThumb": "/src/assets/images/projects/executive_dashboard/qlik_db_thumb.jpg",
+        "srcFull": "/src/assets/images/projects/executive_dashboard/qlik_db.jpg",
+        "alt": "dashboard"
+      }
+    ],
+    "link": ""
+  },
+  {
+    "id": "better-ucf-parking",
+    "title": "Better UCF Parking",
+    "description": [
+      "This project was initialized in HCI class at UCF. We, as a team of 5 students, had to design an interface for our imaginary mobile app. But we decided to build on and improve the design and functionality of the current UCF parking app.",
+      "Later, during my internship at Office Depot where I learned React-Native, I created a visual prototype which worked on both IOS and Android."
+    ],
+    "media": [
+      {
+        "srcThumb": "/src/assets/images/projects/better_ucf_parking/bucfp_login_thumb.jpg",
+        "srcFull": "/src/assets/images/projects/better_ucf_parking/bucfp_login.jpg",
+        "alt": "login"
+      },
+      {
+        "srcThumb": "/src/assets/images/projects/better_ucf_parking/bucfp_overview_thumb.jpg",
+        "srcFull": "/src/assets/images/projects/better_ucf_parking/bucfp_overview.jpg",
+        "alt": "overview"
+      },
+      {
+        "srcThumb": "/src/assets/images/projects/better_ucf_parking/bucfp_menu_thumb.jpg",
+        "srcFull": "/src/assets/images/projects/better_ucf_parking/bucfp_menu.jpg",
+        "alt": "menu"
+      },
+      {
+        "srcThumb": "/src/assets/images/projects/better_ucf_parking/bucfp_garage_thumb.jpg",
+        "srcFull": "/src/assets/images/projects/better_ucf_parking/bucfp_garage.jpg",
+        "alt": "garage"
+      }
+    ],
+    "link": ""
+  },
+  {
+    "id": "reus-auto",
+    "title": "Reus Auto",
+    "description": [
+    ],
+    "media": [],
+    "link": "https://github.com/AndreiGoriunov/reus-auto"
+  }
+]
