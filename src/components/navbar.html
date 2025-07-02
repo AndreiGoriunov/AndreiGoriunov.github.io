@@ -1,0 +1,45 @@
+<!-- Navbar -->
+<header class="w-full fixed top-0 left-0 bg-black bg-opacity-80 backdrop-blur-md z-50 text-white">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 32 32">
+                <use xlink:href="./assets/kodx.svg"></use>
+            </svg>
+            <span class="text-xl"></span>
+            <span class="font-semibold">Andrei</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex space-x-6">
+            <a href="#projects" class="hover:text-pink-300 transition">Projects</a>
+            <div class="relative group">
+                <button class="flex items-center hover:text-pink-300 transition">
+                    Live
+                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <!-- Dropdown (placeholder) -->
+                <div class="absolute hidden group-hover:block mt-2 bg-black text-white rounded shadow-lg p-2 w-32">
+                    <a href="#" class="block px-2 py-1 hover:bg-gray-700">App 1</a>
+                    <a href="#" class="block px-2 py-1 hover:bg-gray-700">App 2</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Icons -->
+        <div class="flex space-x-4">
+            <a href="https://github.com/AndreiGoriunov" target="_blank" aria-label="GitHub">
+                <svg class="w-6 h-6 hover:text-pink-300 transition" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.5 7.9 11 .6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1 .1 1.5 1 1.5 1 .9 1.5 2.5 1 3.1.7.1-.7.3-1 .6-1.2-2.6-.3-5.4-1.3-5.4-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 015.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.9 1.2 3.1 0 4.6-2.8 5.4-5.5 5.7.4.3.7.9.7 1.9v2.8c0 .3.2.7.8.6A11.5 11.5 0 0023.5 12c0-6.3-5.2-11.5-11.5-11.5z"/>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/andrei-goriunov" target="_blank" aria-label="LinkedIn">
+                <svg class="w-6 h-6 hover:text-pink-300 transition" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 8.98h4v12H3zm7 0h3.6v1.64h.05c.5-.94 1.7-1.93 3.5-1.93 3.8 0 4.5 2.5 4.5 5.76v6.53h-4v-5.8c0-1.4-.03-3.2-1.96-3.2-1.97 0-2.27 1.5-2.27 3.1v5.9H10z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</header>

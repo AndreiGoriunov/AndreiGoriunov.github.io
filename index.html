@@ -1,41 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Andrei Goriunov</title>
-  <!-- Start Single Page Apps for GitHub Pages -->
-  <script type="text/javascript">
-    // Single Page Apps for GitHub Pages
-    // MIT License
-    // https://github.com/rafgraph/spa-github-pages
-    // This script checks to see if a redirect is present in the query string,
-    // converts it back into the correct url and adds it to the
-    // browser's history using window.history.replaceState(...),
-    // which won't cause the browser to attempt to load the new url.
-    // When the single page app is loaded further down in this file,
-    // the correct url will be waiting in the browser's history for
-    // the single page app to route accordingly.
-    (function (l) {
-      if (l.search[1] === '/') {
-        var decoded = l.search.slice(1).split('&').map(function (s) {
-          return s.replace(/~and~/g, '&')
-        }).join('?');
-        window.history.replaceState(null, null,
-          l.pathname.slice(0, -1) + decoded + l.hash
-        );
-      }
-    }(window.location))
-  </script>
-  <!-- End Single Page Apps for GitHub Pages -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Andrei Goriunov</title>
+    <script type="module" src="/src/main.ts"></script>
 </head>
-
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
+<body class="bg-cover bg-center min-h-screen">
+<div id="navbar-placeholder"></div>
+<!-- Hero Section -->
+<div class="flex items-center justify-center min-h-screen  px-4 pt-24">
+    <div class="max-w-xl w-full text-center rounded-xl p-8 bg-black/75 border-gradient">
+        <h1 class="text-3xl font-bold mb-4 text-gradient">
+            Andrei Goriunov
+        </h1>
+        <p class="text-md text-white">
+            Hi, I'm a student graduate from the University of Central Florida with a degree in Information Technology.
+            I'm obsessed with automation. I built this portfolio to showcase my personal projects and share my current
+            interests.
+        </p>
+    </div>
+</div>
+<!-- Footer will be injected here -->
 </body>
-
 </html>
