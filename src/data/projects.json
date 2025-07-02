@@ -10,8 +10,8 @@
     ],
     "media": [
       {
-        "srcThumb": "/src/assets/images/projects/executive_dashboard/qlik_db_thumb.jpg",
-        "srcFull": "/src/assets/images/projects/executive_dashboard/qlik_db.jpg",
+        "srcThumb": "/src/assets/projects/executive-dashboard/qlik_db_thumb.jpg",
+        "srcFull": "/src/assets/projects/executive-dashboard/qlik_db.jpg",
         "alt": "dashboard"
       }
     ],
@@ -26,23 +26,23 @@
     ],
     "media": [
       {
-        "srcThumb": "/src/assets/images/projects/better_ucf_parking/bucfp_login_thumb.jpg",
-        "srcFull": "/src/assets/images/projects/better_ucf_parking/bucfp_login.jpg",
+        "srcThumb": "/src/assets/projects/better-ucf-parking/bucfp_login_thumb.jpg",
+        "srcFull": "/src/assets/projects/better-ucf-parking/bucfp_login.jpg",
         "alt": "login"
       },
       {
-        "srcThumb": "/src/assets/images/projects/better_ucf_parking/bucfp_overview_thumb.jpg",
-        "srcFull": "/src/assets/images/projects/better_ucf_parking/bucfp_overview.jpg",
+        "srcThumb": "/src/assets/projects/better-ucf-parking/bucfp_overview_thumb.jpg",
+        "srcFull": "/src/assets/projects/better-ucf-parking/bucfp_overview.jpg",
         "alt": "overview"
       },
       {
-        "srcThumb": "/src/assets/images/projects/better_ucf_parking/bucfp_menu_thumb.jpg",
-        "srcFull": "/src/assets/images/projects/better_ucf_parking/bucfp_menu.jpg",
+        "srcThumb": "/src/assets/projects/better-ucf-parking/bucfp_menu_thumb.jpg",
+        "srcFull": "/src/assets/projects/better-ucf-parking/bucfp_menu.jpg",
         "alt": "menu"
       },
       {
-        "srcThumb": "/src/assets/images/projects/better_ucf_parking/bucfp_garage_thumb.jpg",
-        "srcFull": "/src/assets/images/projects/better_ucf_parking/bucfp_garage.jpg",
+        "srcThumb": "/src/assets/projects/better-ucf-parking/bucfp_garage_thumb.jpg",
+        "srcFull": "/src/assets/projects/better-ucf-parking/bucfp_garage.jpg",
         "alt": "garage"
       }
     ],
@@ -51,7 +51,7 @@
   {
     "id": "reus-auto",
     "title": "Reus Auto",
-    "description": [
+    "description": ["TBD"
     ],
     "media": [],
     "link": "https://github.com/AndreiGoriunov/reus-auto"

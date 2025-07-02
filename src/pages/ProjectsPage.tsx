@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react';
+import {useEffect, useState} from 'react';
 import ProjectCard from '../components/ProjectCard';
 import Gallery from '../components/Gallery';
-import { ProjectData } from '../types/project';
+import {ProjectData} from '../types/project';
 
 function ProjectsPage() {
     const [projects, setProjects] = useState<ProjectData[]>([]);
@@ -11,7 +11,6 @@ function ProjectsPage() {
     useEffect(() => {
         const fetchProjects = async () => {
             try {
-                // In a real app, you might fetch this from an API
                 const response = await import('../data/projects.json');
                 setProjects(response.default);
             } catch (err) {
@@ -42,14 +41,14 @@ function ProjectsPage() {
                             <p key={index}>{paragraph}</p>
                         ))}
                         {project.media && project.media.length > 0 && (
-                            <Gallery galleryItems={project.media} />
+                            <Gallery galleryItems={project.media}/>
                         )}
                         {project.link && (
-                            <a 
-                                href={project.link} 
-                                target="_blank" 
+                            <a
+                                href={project.link}
+                                target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-blue-500 hover:underline"
+                                className="project-link"
                             >
                                 View Project
                             </a>

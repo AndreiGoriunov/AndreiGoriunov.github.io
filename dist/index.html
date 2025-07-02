@@ -21,7 +21,7 @@
     // the single page app to route accordingly.
     (function (l) {
       if (l.search[1] === '/') {
-        var decoded = l.search.slice(1).split('&').map(function (s) {
+        const decoded = l.search.slice(1).split('&').map(function (s) {
           return s.replace(/~and~/g, '&')
         }).join('?');
         window.history.replaceState(null, null,
@@ -31,8 +31,8 @@
     }(window.location))
   </script>
   <!-- End Single Page Apps for GitHub Pages -->
-  <script type="module" crossorigin src="/assets/index-c73d9714.js"></script>
-  <link rel="stylesheet" href="/assets/index-6e984b85.css">
+  <script type="module" crossorigin src="/assets/index-89efbe85.js"></script>
+  <link rel="stylesheet" href="/assets/index-a9a630c3.css">
 </head>
 
 <body>

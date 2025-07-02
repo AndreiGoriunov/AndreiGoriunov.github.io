@@ -78,6 +78,13 @@ const theme = extendBaseTheme({
                 '100%': {
                     backgroundPosition: '100% 50%'
                 }
+            },
+            '.project-link': {
+                color: 'green500',
+                textDecoration: 'none',
+                '&:hover': {
+                    textDecoration: 'underline',
+                }
             }
         }
     },
