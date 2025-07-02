@@ -51,9 +51,28 @@
   {
     "id": "reus-auto",
     "title": "Reus Auto",
-    "description": ["TBD"
+    "description": [
+      "A Python-based desktop automation tool that allows you to create and run macros for automating repetitive tasks. It's utilizing image recognition for element selection on the screen.",
+      "Provides a variety of built-in functions to create macros for automating tasks:",
+      "- Mouse control (click, double-click, right-click, drag, etc.)",
+      "- Keyboard input (typing, key presses, key combinations, etc.)",
+      "- Window management (open, close, minimize, maximize, etc.)",
+      "- Delay management (pause, wait for a specific event, etc.)",
+      "- Image recognition (locate an element on the screen, etc.)",
+      "- Conditional actions (if-else statements, loops, etc.)"
     ],
-    "media": [],
+    "media": [
+      {
+        "srcThumb": "/images/projects/reus-auto/main-gui.png",
+        "srcFull": "/images/projects/reus-auto/main-gui.png",
+        "alt": "main gui"
+      },
+      {
+        "srcThumb": "/images/projects/reus-auto/mouse-macro.jpg",
+        "srcFull": "/images/projects/reus-auto/mouse-macro.jpg",
+        "alt": "mouse macro"
+      }
+    ],
     "link": "https://github.com/AndreiGoriunov/reus-auto"
   }
 ]
